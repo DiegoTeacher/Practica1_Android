@@ -11,8 +11,7 @@ public class InsertToDB extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_insert_to_db);// 1.0
-        // 2.0
+        setContentView(R.layout.activity_insert_to_db);
     }
 
     public void changeToMain(View view) {
