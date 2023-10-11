@@ -10,9 +10,10 @@
         android:id="@+id/showName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="169dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="155dp"
         android:text="TextView"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,9 +21,9 @@
         android:id="@+id/showEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="52dp"
         android:text="TextView"
+        android:textSize="64sp"
         app:layout_constraintStart_toStartOf="@+id/showName"
         app:layout_constraintTop_toBottomOf="@+id/showName" />
 
@@ -30,8 +31,10 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
         android:onClick="changeToMain"
         android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="428dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
