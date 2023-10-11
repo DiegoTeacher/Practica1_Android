@@ -27,6 +27,7 @@
         android:id="@+id/buttonTest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="changeToShow"
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@id/buttonNoAnon"
         app:layout_constraintEnd_toStartOf="@id/buttonNoAnon"
