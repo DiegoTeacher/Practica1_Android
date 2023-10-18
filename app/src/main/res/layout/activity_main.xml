@@ -115,6 +115,7 @@
         android:hint="Name"
         android:inputType="text"
 
+        android:textAlignment="viewStart"
         tools:layout_editor_absoluteX="116dp"
         tools:layout_editor_absoluteY="122dp" />
 
