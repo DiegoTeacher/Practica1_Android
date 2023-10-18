@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(nIntent);
     }
 
+    public void changeToDelete(View view) {
+        Intent nIntent = new Intent(MainActivity.this, Delete.class);
+        startActivity(nIntent);
+    }
+
     public void changeToShow(View view) {
         Intent nIntent = new Intent(MainActivity.this, Show.class);
         startActivity(nIntent);
