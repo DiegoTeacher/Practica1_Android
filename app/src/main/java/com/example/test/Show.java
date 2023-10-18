@@ -7,8 +7,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.test.Database.DatabaseAux;
 
@@ -40,8 +42,21 @@ public class Show extends AppCompatActivity {
                 String email = cursor.getString(2);
 
                 TextView data = new TextView(this);
+                Button b = new Button(this);
+                b.setText("hola");
+                b.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        // Toast.makeText(v.getContext(), name, Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(Show.this, Update.class);
+                        intent.putExtra("message_key", name);
+                        startActivity(intent);
+
+                    }
+                });
                 data.setText("Nombre: " + name + " Email: " + email);
                 layout.addView(data);
+                layout.addView(b);
             }while(cursor.moveToNext());
         }
         db.close();
